@@ -1,4 +1,4 @@
-package org.kotlinlang.play
+package org.kotlinlang.play.functions
 
 // Infix Functions
 // Member functions and extensions with a single parameter
