@@ -20,10 +20,15 @@ class MutableStack<E>(vararg items: E){
 
 
     override fun toString() = "MutableStack(${elements.joinToString()})"
+
 }
 
+fun<E> mutableStackOf(vararg  elements: E) = MutableStack(*elements)
+
 fun main() {
-    val stack = MutableStack(0.69, 3.14, 2.7)
+
+    // 타입추론하기 때문에 double 타입을 명시안해도 작동함함
+   val stack = MutableStack(0.69, 3.14, 2.7)
     println("init: $stack")
     stack.push(0.99)
     println("push: $stack")
@@ -35,5 +40,7 @@ fun main() {
         println("pop(): ${stack.pop()}")
         println(stack)
     }
+
+    val stackOf = mutableStackOf("0.11", "0.34", "0.27")
 
 }
