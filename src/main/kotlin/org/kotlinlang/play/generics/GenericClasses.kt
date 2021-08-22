@@ -23,6 +23,7 @@ class MutableStack<E>(vararg items: E){
 
 }
 
+// generic function
 fun<E> mutableStackOf(vararg  elements: E) = MutableStack(*elements)
 
 fun main() {
