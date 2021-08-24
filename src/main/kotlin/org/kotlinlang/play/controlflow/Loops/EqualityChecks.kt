@@ -1,9 +1,11 @@
 package org.kotlinlang.play.controlflow.Loops
 
 // Kotlin uses == for structural comparison
+// if (a == null) b == null else a.equals(b)
+
 // and === for referential comparison.
 
-// if (a == null) b == null else a.equals(b)
+
 fun main() {
     val authors = setOf("Shakespeare", "Hemingway", "Twain")
     val writers = setOf("Twain", "Shakespeare", "Hemingway", "Twain")
