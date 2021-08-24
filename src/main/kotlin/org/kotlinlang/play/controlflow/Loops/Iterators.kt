@@ -23,7 +23,10 @@ fun main() {
     )
 
     // For-loop range must have an 'iterator()' method
+    // Loops through animals in the zoo with the user-defined iterator.
     for (animal in zoo) {
         println("Watch out, it's a ${animal.name}")
     }
+
+    // The iterator can be declared in the type or as an extension function.
 }
