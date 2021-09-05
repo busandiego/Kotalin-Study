@@ -31,6 +31,10 @@ fun main() {
     infix fun Int.times(str: String) = str.repeat((this))
     println(2 times "Bye ")
 
+
+    infix fun Int.timess(str: String) = str.repeat((this))
+    println(3 timess "Bye ")
+
     val pair = "Ferrari" to "Rambo"
     println(pair)
 
@@ -50,7 +54,7 @@ fun main() {
 
     // Infix notation also works on members functions (methods).
     lee liked laura
-    // println(lee liked laura)
+    //println(lee liked laura)
     // println("lee.likedPeople: " + lee.likedPeople)
 }
 
@@ -59,6 +63,8 @@ class Person(val name: String) {
 
     infix fun liked(other: Person) {
         likedPeople.add(other)
+        println("other::: " + other.toString())
+        println("likedPeople::: " + likedPeople.toString())
     }
 
 }
