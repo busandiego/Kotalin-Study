@@ -14,6 +14,7 @@ package org.kotlinlang.play.collections
 fun main() {
 
     val numbers = listOf(1, -2, 3, -4, 5, -6)
+    val arrnumbers = arrayOf(1, -2, 3, -4, 5, -6)
 
     val first = numbers.first()
     val last = numbers.last()
@@ -23,5 +24,7 @@ fun main() {
     val lastOdd = numbers.last { it % 2 != 0}
 
     println("Numbers: $numbers")
+    println("arrnumbers: ${arrnumbers.toString()}")
+    println("arrnumbers: ${arrnumbers[0]}")
     println("First $first, last $last, first even $firstEven, last odd $lastOdd" )
 }
