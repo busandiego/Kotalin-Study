@@ -12,5 +12,13 @@ fun main() {
         d = 2
     }
 
-    println(d)
+    println(d) // -> first read
+
+    val a= ""
+    val b = " "
+
+    println("'' ${a.length}")
+    println("' ' ${b.length}")
+
+
 }

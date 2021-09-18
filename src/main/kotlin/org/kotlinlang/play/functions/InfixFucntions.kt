@@ -29,6 +29,7 @@ val map2 = mapOf("민주당2호" to "이낙연", "국힘당2호" to "홍준표")
 
 fun main() {
     infix fun Int.times(str: String) = str.repeat((this))
+    // 여기서 this는 Int가 된다 -> 2가 들어가게 됨.
     println(2 times "Bye ")
 
 
