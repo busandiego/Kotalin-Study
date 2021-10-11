@@ -3,7 +3,7 @@ package org.kotlinlang.logictest
 class GenericTest {
 
     // 제네릭 추가학습 필요
-    //////////////////
+    ////////////////////
     class DataSourceOperation<T>
     constructor(
         val data: T?,
