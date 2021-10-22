@@ -23,4 +23,11 @@ fun main() {
 
     println(firstDay)
     println( localDateNow.monthValue)
+
+
+    val res = "0,|1.86,1.33:1.34,1.10|1.86,1.33:1.34,1.10|1.86,1.33:1.34,1.10|1.86,1.33:1.34,1.10|1.86,1.33:1.34,1.10|1.86,1.33:1.34,1.10|1.86,1.33:1.34,1.10|1.86,1.33:1.34,1.10|1.86,1.33:1.34,1.10|1.86,1.33:1.34,1"
+
+    val split = res.split("|").toMutableList()
+     split.removeAt(0)
+     println(split)
 }
