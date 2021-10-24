@@ -1,5 +1,7 @@
 package org.kotlinlang.play.classes
 
+import java.sql.DriverManager.println
+
 
 class Customer
 // curly braces can be omitted 생략가능
@@ -34,7 +36,7 @@ fun main() {
     val contact = Contact(id = 1, email = "mary@gmail.com")
 
     // accesses the property id
-    println(contact.id)
+  //  println(contact.id)
 
     // updates the value of property email
     contact.email = "jane@gmail.com"
@@ -43,4 +45,6 @@ fun main() {
 
 
 }
+
+
 
