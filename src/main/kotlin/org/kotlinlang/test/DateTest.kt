@@ -4,7 +4,7 @@ import java.time.LocalDate
 import java.util.*
 
 fun main() {
-
+//
     val localDateNow = LocalDate.now()
     val localDateNowPlus1 = localDateNow.plusDays(1L)
     val nowInt = localDateNow.toString().replace("-", "").toInt()
